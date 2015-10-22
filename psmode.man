@@ -1,0 +1,28 @@
+.TH psmode 1 "21 October 15"
+.SH NAME
+psmode - Power saving mode
+.SH SYNOPSIS
+psmode none
+.SH DESCRIPTION
+psmode lowers down the brightness,
+check if the wifi is not connected the turn off the wifi
+and bluetooth
+Sorts the top cpu consuming processes and
+lowers down the priority level of those processes.
+It can reduce cpu clock speed and starts hard disks power saving mode.
+.SS Options
+.TP
+none.
+.SH FILES
+.TP
+dev/cf0
+The remote power saving mode
+.SH "SEE ALSO"
+hdparm(8)
+.SH BUGS
+It displays unwanted command execution lines.
+Due to some dangerous effects of reducing clock speed and hard disk power saving mode,
+this commands are kept as subordinates.
+.SH DEVELOPED BY
+.TP 
+Raxda Group 
